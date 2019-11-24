@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+  int feb,feb1=0,feb2=1,i,n;
+  printf("enter n");
+  scanf("%d",&n);
+  printf("%d\t%d\t",feb1,feb2);
+for(i=3;i<=n;i++)
+    {
+      feb=feb1+feb2;
+      feb1=feb2;
+      feb2=feb;
+      printf("%d\t",feb);
+    }
+}
