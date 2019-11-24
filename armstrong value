@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+/*programme for armstrong number*/
+{
+int n,rem,sum;
+printf("enter the number:");
+scanf("%d",&n);
+printf("the reverse number is:");
+while(n>0)
+    {
+    rem=n%10;
+    sum=sum+(rem*rem*rem);
+    n=n/10;
+    }
+printf("sum is=%d",sum);
+                if(sum==n)
+                printf("armstrong");
+                else
+                printf("! armstrong");
+return 0;
+}
